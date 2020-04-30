@@ -1,0 +1,40 @@
+
+com Node  instalado
+
+	* comandos
+    npm init -y
+    npm i --save json-server@0.13.0 -E
+
+        * criar arquivo db.json com schema e conteudo
+{
+    "produtos": [
+{
+      "id": 1,
+      "nome": "Computador",
+      "preco": "1299.00"
+    },
+{
+      "id": 1,
+      "nome": "Computador",
+      "preco": "1299.00"
+    },
+{
+      "id": 1,
+      "nome": "Computador",
+      "preco": "1299.00"
+    }
+]
+}
+
+        * no arquivo package.json mudar script "test" por
+
+"start": "json-server --watch db.json --port 3002
+
+ 	* comando 
+npm start
+
+pronto
+
+depois só consultar usando o navegador ou postman, insomnia.
+
+http://localhost:3002/produtos
